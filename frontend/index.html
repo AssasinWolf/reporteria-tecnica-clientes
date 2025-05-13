@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Dashboard CSV - Clientes
+  </title>
+  <link href="estilos.css" rel="stylesheet"/>
+  <script defer="" src="main.js">
+  </script>
+ </head>
+ <body>
+  <header>
+   <h1>
+    Dashboard de Solicitudes
+   </h1>
+  </header>
+  <section id="barra-filtros">
+   <div class="filtro-box">
+    <label for="filtro-cliente">
+     Cliente
+    </label>
+    <select id="filtro-cliente">
+     <option>
+      Todos
+     </option>
+    </select>
+   </div>
+   <div class="filtro-box">
+    <label for="filtro-estado">
+     Estado Solicitud
+    </label>
+    <select id="filtro-estado">
+     <option>
+      Todos
+     </option>
+    </select>
+   </div>
+   <div class="filtro-box">
+    <label for="filtro-tecnico">
+     T&eacute;cnico
+    </label>
+    <select id="filtro-tecnico">
+     <option>
+      Todos
+     </option>
+    </select>
+   </div>
+   <div class="filtro-box">
+    <label for="filtro-fecha">
+     Fecha Cierre
+    </label>
+    <select id="filtro-fecha">
+     <option>
+      Todos
+     </option>
+    </select>
+   </div>
+   <div class="info-box">
+    Valor Total
+    <span class="valor">
+     $0
+    </span>
+   </div>
+   <div class="info-box">
+    Total Solicitudes
+    <span class="valor">
+     0
+    </span>
+   </div>
+   <div class="info-box">
+    Horas Totales
+    <span class="valor">
+     0
+    </span>
+   </div>
+  </section>
+  <main>
+   <section class="tabla-card" id="tecnicos-wrapper">
+    <h3>
+     Resumen por T&eacute;cnico
+    </h3>
+    <table id="tablaTecnicos">
+     <thead>
+      <tr>
+       <th>
+        T&eacute;cnico
+       </th>
+       <th>
+        Solicitudes
+       </th>
+       <th>
+        Tiempo Total
+       </th>
+      </tr>
+     </thead>
+     <tbody id="tabla-body">
+     </tbody>
+    </table>
+   </section>
+   <div id="clientes-columna">
+    <div class="contenedor-clientes-estados">
+     <div class="bloque-cliente">
+      <section class="tabla-card mitad-ancho" id="clientes-wrapper">
+       <h3>
+        Resumen por Cliente
+       </h3>
+       <table id="tablaClientes">
+        <thead>
+         <tr>
+          <th>
+           Cliente
+          </th>
+          <th>
+           Total Solicitudes
+          </th>
+          <th>
+           Costo Total
+          </th>
+         </tr>
+        </thead>
+        <tbody id="tabla-clientes-body">
+        </tbody>
+       </table>
+      </section>
+     </div>
+     <div class="bloque-estado">
+      <section class="tabla-card mitad-ancho" id="estado-wrapper">
+       <h3>
+        Estado de Solicitud
+       </h3>
+       <table id="tablaEstado">
+        <thead>
+         <tr>
+          <th>
+           Estado
+          </th>
+          <th>
+           Total
+          </th>
+         </tr>
+        </thead>
+        <tbody id="tabla-estado-body">
+        </tbody>
+       </table>
+      </section>
+     </div>
+     <div class="limpiar-flotantes">
+     </div>
+    </div>
+    <section class="tabla-card" id="segunda-tabla-wrapper">
+     <h3>
+      Detalle por T&eacute;cnico
+     </h3>
+     <table>
+      <thead>
+       <tr>
+        <th>
+         T&eacute;cnico
+        </th>
+        <th>
+         Comuna
+        </th>
+        <th>
+         &Aacute;rea
+        </th>
+        <th>
+         Cliente
+        </th>
+        <th>
+         Duraci&oacute;n Atenci&oacute;n
+        </th>
+        <th>
+         Valor Cobrado
+        </th>
+       </tr>
+      </thead>
+      <tbody>
+      </tbody>
+     </table>
+    </section>
+   </div>
+  </main>
+ </body>
+</html>
+
