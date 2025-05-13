@@ -24,19 +24,19 @@ Este proyecto es una aplicación web de reportería operativa que permite visual
 
 ## 📂 Estructura del proyecto
 
+```
 backend/
-│ ├── main.py
-│ ├── utils.py
-│ └── datos/ (excluido)
+│   ├── main.py
+│   ├── utils.py
+│   └── datos/ (excluido)
 frontend/
-│ ├── index.html
-│ ├── main.js
-│ └── estilos.css
+│   ├── index.html
+│   ├── main.js
+│   └── estilos.css
 README.md
 .gitignore
+```
 
 ## ✍️ Autor
 
 Proyecto anonimizado para publicación pública en GitHub.
-
-
